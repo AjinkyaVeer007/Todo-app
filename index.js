@@ -35,6 +35,7 @@ const addtodo = () => {
     todoContent = document.querySelectorAll(".item");
     deleteButton = document.querySelectorAll(".delete");
     deleteButton.forEach((item) => {
+      item.removeEventListener;
       item.addEventListener("click", () => {
         item.parentElement.remove();
       });
@@ -42,6 +43,7 @@ const addtodo = () => {
 
     editButton = document.querySelectorAll(".edit");
     editButton.forEach((item) => {
+      item.removeEventListener;
       item.addEventListener("click", () => {
         inputText.value = item.previousElementSibling.innerHTML;
         item.parentElement.remove();
